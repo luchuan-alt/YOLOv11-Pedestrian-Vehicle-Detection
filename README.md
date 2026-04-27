@@ -25,20 +25,19 @@
 ---
 
 ## 快速开始
-### 
-1. 安装依赖
-bash
-运行
+### 1. 安装依赖
+```bash
 pip install ultralytics
-2. 一键训练
-bash
-运行
+```
+###2. 一键训练
+```bash
 python train.py
-3. 快速推理
-bash
-运行
-python infer.py
-文件结构
+```
+###3. 快速推理
+```bash
+ python infer.py
+```
+##文件结构
 plaintext
 /YOLOv11-Pedestrian-Vehicle-Detection
 ├── README.md               # 项目说明文档（本文件）
@@ -52,7 +51,8 @@ plaintext
         └── yolo11_vp/
             └── weights/
                 └── best.pt # 训练得到的最优权重文件
-环境配置
+##环境配置
+```bash
 推荐环境
 Python 版本：3.10
 核心依赖：ultralytics>=8.0
@@ -66,18 +66,19 @@ conda activate yolov11
 
 # 安装ultralytics库
 pip install ultralytics
-数据集说明
+```
+##数据集说明
 数据集来源
-来源：Roboflow Universe 公开数据集
-项目名：Pedestrian & vehicle detection v7
-图像总数：1596 张
-标注格式：YOLO 格式（.txt标注文件）
-预处理与增强
-图像尺寸：640×640 统一缩放
-数据增强：随机亮度、旋转、模糊、水平翻转
-数据集划分：默认按训练 / 验证 / 测试集划分
-训练流程
-### 训练参数配置（`train.py`）
+1、来源：Roboflow Universe 公开数据集
+2、项目名：Pedestrian & vehicle detection v7
+3、图像总数：1596 张
+4、标注格式：YOLO 格式（.txt标注文件）
+5、预处理与增强
+6、图像尺寸：640×640 统一缩放
+7、数据增强：随机亮度、旋转、模糊、水平翻转
+8、数据集划分：默认按训练 / 验证 / 测试集划分
+##训练流程
+### 1、训练参数配置（`train.py`）
 | 参数    | 取值 | 说明               |
 |---------|------|--------------------|
 | epochs  | 15   | 训练轮次           |
@@ -85,32 +86,33 @@ pip install ultralytics
 | batch   | 4    | 批次大小           |
 | device  | cpu  | 训练设备（CPU）    |
 | workers | 2    | 数据加载线程数     |
-训练执行
-bash
-运行
+###2、训练执行
+```bash
 python train.py
+```
 训练过程中，日志与模型权重会自动保存到 runs/detect/yolo11_vp/ 目录下。
-推理与测试
-推理参数配置（infer.py）
+##推理与测试
+###1、推理参数配置（infer.py）
 | 参数 | 取值 | 说明               |
 |------|------|--------------------|
 | conf | 0.25 | 置信度阈值         |
 | iou  | 0.45 | NMS 交并比阈值     |
-推理执行
-bash
-运行
+###2、推理执行
+```bash
 python infer.py
-推理结果（带检测框的图像 / 视频）会保存到 runs/detect/ 目录下。
+```
+##实验结果与分析
+###1、推理结果（带检测框的图像 / 视频）会保存到 runs/detect/ 目录下。
 | 指标           | 数值  | 说明                 |
 |----------------|-------|----------------------|
 | mAP@0.5        | 0.83  | 类别平均精度         |
 | mAP@0.5:0.95   | 0.55  | 多尺度精度           |
 | 训练时间       | ~30分钟 | CPU 环境下15轮训练耗时 |
-结果分析
+###2、结果分析
 模型在行人与车辆目标上均能稳定识别，无明显漏检 / 误检问题。
 轻量级 YOLOv11n 模型在 CPU 环境下也能实现实时推理，满足课程实验需求。
 数据增强有效提升了模型的泛化能力，对不同光照、角度的目标鲁棒性较好。
-作者信息
+##作者信息
 报告人：林钰韵
 学号：2023280266
 班级：电信 01 班
