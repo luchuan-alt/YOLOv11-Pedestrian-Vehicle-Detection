@@ -46,7 +46,8 @@ python train.py
 ├── infer.py                # 模型推理与测试脚本
 ├── README.dataset.txt      # 数据集原始说明
 ├── README.roboflow.txt     # Roboflow导出信息
-└── runs/                   # 训练日志、模型权重与结果输出目录
+└── runs/
+    └── predict/            #推理预测结果保存目录
     └── detect/
         └── yolo11_vp/
             └── weights/
@@ -101,6 +102,7 @@ python train.py
 ```bash
 python infer.py
 ```
+推理结果将会保存到runs/detect/predict/ 目录下
 ## 实验结果与分析
 本项目基于YOLOv11n模型完成了行人与车辆目标的检测任务，分别在白天可见光场景与夜间红外场景中进行了测试，检测效果如下：
 ![白天场景检测结果](你的第一张图链接地<img width="640" height="640" alt="predict2" src="https://github.com/user-attachments/assets/172b3e26-0f00-4779-a3b9-fea1bed55df6" />
