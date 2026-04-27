@@ -107,6 +107,7 @@ python infer.py
 本项目基于YOLOv11n模型完成了行人与车辆目标的检测任务，分别在白天可见光场景与夜间红外场景中进行了测试，检测效果如下：
 ### 白天场景检测结果
 <img width="600" height="400" alt="predict1" src="https://github.com/user-attachments/assets/96dca229-e7de-472b-9ef7-c4da57710930" />
+
 ### 夜间红外场景检测结果
 <img width="640" height="640" alt="predict2" src="https://github.com/user-attachments/assets/e971c9e6-fbfc-4165-b924-50349091eea6" />
 
