@@ -38,7 +38,7 @@ python train.py
  python infer.py
 ```
 ## 文件结构
-plaintext
+```plaintext
 /YOLOv11-Pedestrian-Vehicle-Detection
 ├── README.md               # 项目说明文档（本文件）
 ├── data.yaml               # 数据集路径与类别配置文件
@@ -51,15 +51,14 @@ plaintext
         └── yolo11_vp/
             └── weights/
                 └── best.pt # 训练得到的最优权重文件
+```
 ## 环境配置
+### 推荐环境
+### Python 版本：3.10
+### 核心依赖：ultralytics>=8.0
+### 运行环境：Windows/Linux（CPU/GPU 均可）
+### 完整配置命令
 ```bash
-推荐环境
-Python 版本：3.10
-核心依赖：ultralytics>=8.0
-运行环境：Windows/Linux（CPU/GPU 均可）
-完整配置命令
-bash
-运行
 # 创建虚拟环境
 conda create -n yolov11 python=3.10 -y
 conda activate yolov11
@@ -69,14 +68,14 @@ pip install ultralytics
 ```
 ## 数据集说明
 数据集来源
-1、来源：Roboflow Universe 公开数据集
-2、项目名：Pedestrian & vehicle detection v7
-3、图像总数：1596 张
-4、标注格式：YOLO 格式（.txt标注文件）
-5、预处理与增强
-6、图像尺寸：640×640 统一缩放
-7、数据增强：随机亮度、旋转、模糊、水平翻转
-8、数据集划分：默认按训练 / 验证 / 测试集划分
+### 1、来源：Roboflow Universe 公开数据集
+### 2、项目名：Pedestrian & vehicle detection v7
+### 3、图像总数：1596 张
+### 4、标注格式：YOLO 格式（.txt标注文件）
+### 5、预处理与增强
+### 6、图像尺寸：640×640 统一缩放
+### 7、数据增强：随机亮度、旋转、模糊、水平翻转
+### 8、数据集划分：默认按训练 / 验证 / 测试集划分
 ## 训练流程
 ### 1、训练参数配置（`train.py`）
 | 参数    | 取值 | 说明               |
@@ -113,8 +112,8 @@ python infer.py
 轻量级 YOLOv11n 模型在 CPU 环境下也能实现实时推理，满足课程实验需求。
 数据增强有效提升了模型的泛化能力，对不同光照、角度的目标鲁棒性较好。
 ## 作者信息
-报告人：林钰韵
-学号：2023280266
-班级：电信 01 班
-指导教师：戴林蕙
-项目地址：https://github.com/luchuan-alt/YOLOv11-Pedestrian-Vehicle-Detection
+### 报告人：林钰韵
+### 学号：2023280266
+### 班级：电信 01 班
+### 指导教师：戴林蕙
+### 项目地址：https://github.com/luchuan-alt/YOLOv11-Pedestrian-Vehicle-Detection
