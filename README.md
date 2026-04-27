@@ -105,11 +105,10 @@ python infer.py
 推理结果将会保存到runs/detect/predict/ 目录下
 ## 实验结果与分析
 本项目基于YOLOv11n模型完成了行人与车辆目标的检测任务，分别在白天可见光场景与夜间红外场景中进行了测试，检测效果如下：
-![白天场景检测结果](你的第一张图链接地<img width="640" height="640" alt="predict2" src="https://github.com/user-attachments/assets/172b3e26-0f00-4779-a3b9-fea1bed55df6" />
-<img width="600" height="400" alt="predict1" src="https://github.com/user-attachments/assets/319c672b-8e16-4d8c-9d65-92697d7235ba" />
-址)
-![夜间红外场景检测结果](你的第二张图链![Uploading predict2.jpg…]()
-接地址)
+###白天场景检测结果
+<img width="600" height="400" alt="predict1" src="https://github.com/user-attachments/assets/96dca229-e7de-472b-9ef7-c4da57710930" />
+###夜间红外场景检测结果
+<img width="640" height="640" alt="predict2" src="https://github.com/user-attachments/assets/e971c9e6-fbfc-4165-b924-50349091eea6" />
 
 ### 关键指标
 | 指标           | 数值  | 说明                 |
